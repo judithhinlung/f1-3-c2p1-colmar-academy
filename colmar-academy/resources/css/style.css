@@ -1,0 +1,311 @@
+html {
+  font-family: sans-serif;
+  font-size: 16px;
+  color: #f4e8c1;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+/* Header */
+header {
+  display: flex;
+  width: 100%;
+  height: 64px;
+  margin: 0 24px;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  align-items: center;
+  background-color: #32CD32
+  z-index: 5;
+  position: fixed;
+}
+.logo {
+  text-transform: uppercase;
+}
+
+header p {
+  display: inline;
+  text-transform: uppercase;
+  color: #D3D3D3;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 0.5rem;
+  padding-bottom: 1.25rem;
+}
+
+header span {
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  width: 75%;
+  justify-content: flex-end;
+}
+
+nav li {
+  display: inline-block;
+  font-weight: 400;
+  margin-left: 16px;
+}
+
+nav li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav a:hover {
+  transition: color 200ms linear 200ms;
+  color: #FFa500;
+}
+
+nav a:visited {
+  transition: color 200ms linear 50ms;
+  color:#256ebf;
+}
+
+
+@media only screen and (max-width: 500px) {
+  header {
+    padding-right: 1.5rem;
+  }
+  header nav, header p {
+    display: none;
+  }
+}
+
+/* Banner section */
+.banner {
+  background-color: #0000ff;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 4rem;
+}
+
+.banner img {
+  background-image: url(../images/banner.jpg);
+  width: 60%;
+  padding: 2rem 4rem 2rem  2rem;
+  display: block;
+}
+
+.banner .text {
+  justify-content: center;
+  padding: 16px;
+  display: block;
+}
+
+.banner .text h3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+button {
+  background-color: #e9c351;
+  color: #EE82EE;
+  font-weight: bold;
+  border-radius:5px;
+  height: auto;
+  padding: 8px;
+  margin-top: 24px;
+}
+button:hover {
+   transition: color 400ms linear 50ms;
+   background-color: #FFA500;
+}
+
+button:active {
+  transition: color 400ms linear 50ms;
+  background-color: #ADFF2F;
+}
+
+button:visited {
+  transition: color 400ms ease 500ms;
+  background-color: #FFFF00;
+}
+
+@media only screen and (max-width: 500px) {
+  .banner {
+    flex-flow: column;
+  }
+  .banner img {
+    width:100%;
+    height: auto;
+  }
+}
+
+.info {
+  display: flex;
+  flex-flow: column;
+  background-color: #726a95;
+  width: 100%;
+  height: auto;
+}
+
+.photo-container {
+  width: 60%;
+  margin-right: 24px;
+  display: block;
+  height: auto;
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  float: left;
+}
+.photo {
+  background-image: url(../images/information-main.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-color: #0000ff;
+  height: auto;
+}
+.photo-container .text {
+  margin-top: 30px;
+}
+
+.images {
+  width:4 0%;
+}
+
+.image-container {
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.image {
+   width: 40%;
+   height: auto;
+   float: right;
+   padding: 20px;
+}
+
+.image-container .text {
+  width: 60%;
+  text-align: center;
+  float: left;
+}
+
+.image-container .text h3 {
+   margin: 20px auto;
+}
+
+.image-container  .text a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.image-container .text a:hover {
+  transition: color 200ms linear 50ms;
+  color: #FFA500;
+}
+
+.image-container .text a:visited {
+  transition:color 100ms linear 50ms;
+  color: #256ebf;
+}
+.image-container .text .special-event {
+  background-color: #8B008B;
+}
+
+.courses {
+  display: flex;
+  flex-flow: row wrap;
+  padding-bottom:2rem;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  background-color: #DA70D6;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.course-image-container {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  text-align: left;
+  padding: 10pxm;
+}
+}
+
+.courseimage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+
+.description {
+  display: block;
+  padding: 1rem;
+  text-align: left;
+}
+
+.thesis {
+  background-color: blue;
+  display:flex;
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.thesis h2 {
+  display: block;
+  width: 100%;
+}
+
+.video-container {
+  width: 55%;
+  display: block;
+  height: auto;
+  float: left;
+}
+
+.video {
+  float: left;
+  width: 100%;
+  height: auto;
+}
+.textblock {
+  width:100%;
+  display: block;
+  text-align: center;
+  padding: 2rem 0.5rem 2rem 0.5rem;
+}
+@media only screen and (max-width: 500px) {
+
+  .thesis {
+    display: none;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #7FFF00; /**green**/
+  padding: 1.5rem 2rem;
+  border-top: 4px solid;
+}
+
+footer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+footer a:hover {
+  transition: color 200ms linear 200ms;
+  color: #FFA500;
+}
+
+footer a:visited {
+  transition: color 200ms linear 50ms;
+  color: #256ebf;
+}
+
+@media only screen and (max-width: 500px) {
+  footer a {
+    display: none;
+  }
+}
